@@ -1,4 +1,5 @@
 {
+  "framework": null,
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/index.py" },
     { "src": "^/$", "dest": "/frontend/advaith_industries_home/code.html" },
