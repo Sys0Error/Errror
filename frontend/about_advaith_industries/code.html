@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary-fixed": "#380d00",
+                    "primary": "#00327d",
+                    "on-tertiary-container": "#ffaa8a",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#b9c7df",
+                    "on-tertiary-fixed-variant": "#802900",
+                    "surface-bright": "#f7f9fb",
+                    "on-secondary-container": "#57657a",
+                    "outline": "#737784",
+                    "secondary": "#515f74",
+                    "on-background": "#191c1e",
+                    "on-secondary-fixed": "#0d1c2e",
+                    "inverse-surface": "#2d3133",
+                    "surface-tint": "#2559bd",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#001946",
+                    "surface": "#f7f9fb",
+                    "surface-container-high": "#e6e8ea",
+                    "on-surface-variant": "#434653",
+                    "primary-container": "#0047ab",
+                    "surface-container": "#eceef0",
+                    "tertiary-container": "#8b2e01",
+                    "on-primary-fixed-variant": "#00419e",
+                    "outline-variant": "#c3c6d5",
+                    "surface-dim": "#d8dadc",
+                    "tertiary": "#651f00",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed-dim": "#b1c5ff",
+                    "secondary-fixed": "#d5e3fc",
+                    "secondary-container": "#d5e3fc",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "background": "#f7f9fb",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#b1c5ff",
+                    "on-primary-container": "#a5bdff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c1e",
+                    "on-secondary-fixed-variant": "#3a485b",
+                    "primary-fixed": "#dae2ff",
+                    "tertiary-fixed": "#ffdbcf",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .zoom-hover:hover img {
+            transform: scale(1.1);
+        }
+        .machined-sheen {
+            background: linear-gradient(135deg, #00327d 0%, #0047ab 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 dark:bg-slate-900/80 backdrop-blur-xl bg-gradient-to-b from-[#f7f9fb] to-transparent shadow-[0px_20px_40px_rgba(0,50,125,0.06)] font-['Manrope'] antialiased">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-bold tracking-tight text-[#00327d] dark:text-blue-400">Advaith Industries</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#515f74] dark:text-slate-400 font-medium hover:text-[#00327d] hover:scale-105 transition-transform duration-300 ease-out" href="#">Home</a>
+<a class="text-[#515f74] dark:text-slate-400 font-medium hover:text-[#00327d] hover:scale-105 transition-transform duration-300 ease-out" href="#">Products</a>
+<a class="text-[#00327d] dark:text-blue-300 font-semibold border-b-2 border-[#00327d] pb-1 hover:scale-105 transition-transform duration-300 ease-out" href="#">Our Facility</a>
+<a class="text-[#515f74] dark:text-slate-400 font-medium hover:text-[#00327d] hover:scale-105 transition-transform duration-300 ease-out" href="#">Contact</a>
+<button class="machined-sheen text-white px-6 py-2 rounded-lg font-semibold hover:scale-105 active:scale-95 transition-all duration-300">Get Started</button>
+</div>
+<!-- Mobile Menu Icon (Placeholder for functionality) -->
+<div class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative px-6 py-20 max-w-7xl mx-auto lg:py-32">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-4 block">Established Precision</span>
+<h1 class="text-5xl md:text-7xl font-bold text-on-surface tracking-tight mb-8 leading-[1.1]">
+                        Industrial <br/> <span class="text-primary">Precision</span> In Every Cut.
+                    </h1>
+<p class="text-lg text-secondary leading-relaxed max-w-xl mb-10">
+                        At Advaith Industries, we define the standard for local manufacturing. Our facility is a testament to the synergy between advanced machining and artisanal dedication.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="machined-sheen text-on-primary px-8 py-4 rounded-lg font-bold shadow-lg hover:translate-y-[-2px] transition-all duration-300">Explore Facility</button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-lg font-bold hover:bg-surface-container-highest transition-all duration-300">Quality Standards</button>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl shadow-2xl">
+<img class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a high-precision CNC milling machine cutting through heavy steel with bright sparks and cooling fluid" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSoXfDm9Y9BXtNkRD_-dcrbzQgOCpKQtunYWlqUzku8BDknvRZM9XrKASb2-yxdHNmJKIVFbo9-A0FoFYiy1iBDLa4rkaJzJkoK9gOafoGndCtDkKaHiyOm7orheKyGvJJYaaJxoZi22uuXcjtKgliLscvOLhlsSCBUn29TO571MQqNZMVfFo57Pe-kkphBmHH4rNZeaVeJC3ifYRk_OtaGP3PdQ-6yE1pO9407ixDPQvi_1Qx8fg7-A6eB-o4TZ0-Qv6ZjhDlcFd9"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+</div>
+</section>
+<!-- The "Machined" Philosophy Bento Grid -->
+<section class="bg-surface-container-low py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="text-3xl md:text-4xl font-bold tracking-tight">Our Core Standards</h2>
+<div class="h-1 w-20 bg-primary mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Quality -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/15 flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">verified</span>
+<h3 class="text-xl font-bold mb-4">Uncompromising Quality</h3>
+<p class="text-secondary text-sm leading-relaxed">Every component undergoes a multi-stage inspection protocol, ensuring that nothing leaves our floor without meeting strict internal tolerances.</p>
+</div>
+<div class="mt-8 overflow-hidden rounded-lg aspect-video">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Technician in a clean industrial lab using a micrometer to measure the diameter of a machined aluminum component" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQjos4YkBAgndPYViHzpmrtzAHI-TNBkqS1EMA-uiQydg4tGUHlLfkLGJ6rDZ6f4DkiITf_TLoZfU-hPq5nwYc4fyNJmS4PssH83UobwqXKH-_mtX9OY79T2ZSJoPyOvUufhIuiigbxxMVkXkFK1XajCv-bkc7DRO83GfeaNA02zg6e90fS_9eIwQvePvAhAl9uN-J3J8jBQOKYAJnWR6FgjkfpFdGUx37Sr1SpKqpHD-Rj0EXSnIAMhKdW0expEaknULOgLBSMECX"/>
+</div>
+</div>
+<!-- Card 2: Precision -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/15 flex flex-col justify-between group hover:shadow-md transition-shadow md:mt-12">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">precision_manufacturing</span>
+<h3 class="text-xl font-bold mb-4">Extreme Precision</h3>
+<p class="text-secondary text-sm leading-relaxed">Utilizing the latest in multi-axis machining technology, we achieve tolerances that define the peak of industrial excellence.</p>
+</div>
+<div class="mt-8 overflow-hidden rounded-lg aspect-video">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Detailed view of a laser cutting machine creating intricate patterns in a metal sheet with a bright orange glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO5XhwKe8jOYluyWPSIkQITki3cDdpEr3743NSVDTv8TyFC617lNM3XdGnBdA2bLiMYLuvvbgso036dzpi9gUtF1bE0pM42SFlC2pfhn-Z4ocS3Zwaw5IGmUOx6cPCn5_U4vOUAy13x7DlkvT2ScDoFFnAUY_MMlXfSQ_HOWLbFNhbU-oVULNe_KEMiHKGbiB_cc6PzDTYd91p0nQjWg0B7dQtnbkXFMUkPdLdKHTmZqhfeHVvlMMMgoaBoCMNAYpcgtjj-eFVcUq2"/>
+</div>
+</div>
+<!-- Card 3: Reliability -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/15 flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div>
+<span class="material-symbols-outlined text-primary text-4xl mb-6">settings_suggest</span>
+<h3 class="text-xl font-bold mb-4">Sturdy Reliability</h3>
+<p class="text-secondary text-sm leading-relaxed">Our local facility is built for consistency. We provide reliable lead times and predictable results for heavy-duty industrial needs.</p>
+</div>
+<div class="mt-8 overflow-hidden rounded-lg aspect-video">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Interior of a large organized industrial warehouse with tall shelves and heavy machinery in the background under bright LED lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUmyMs0rWCfpN7c582WZvCX2lVozf8DimBqmqqQW8P1HsJ1mB0qR3EUrIgPPv6W4gGHsUa3h6UPHjUByyB6CF8oDkWHetp6V2o71pZgqObNIHaVcMRvy82DsUR-aveBp5qT_bsFtsJ5KrS9B3QvKV7B310QmW10ChSCXgQg1QJ7qy8khCXFYlDH4VoewymoVgSkcKyT2mo7GV_hYQqH0DE3kjWfL0CGvhzfmtrVYs4YTywueNXfUWKOtGbLA0tcE4vJIItjokjvOUo"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Facility Detail -->
+<section class="py-24 px-6 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="aspect-square bg-surface-container-highest rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover transition-transform duration-1000 hover:scale-105" data-alt="Wide shot of a clean modern industrial manufacturing facility with workers in uniform operating heavy specialized equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDujbbOteOWwAPE7DJY6Fd1KljbyvnMV_h1OgdbceEmMz0nqvNXcu7yuxx0g8FlYbO_bSfP03rfxUhTSsCiUb2UjUtkjAQKaVX8t8sW7N3teRT2mP7UhJQ_5RQoH96FnPJKddyaXLHY_kPLXiOnEWCC2A9IbP0stlA9V1LMo4ddVqsB3PMc0ZABwbQGyU1VQKoCCiCb25fSfDg2hTDpEO8TyZ0Ov2T5RO943vqNE1oh0_rGWMohkX2W691GH7AFvyX1oZ46Y0MCTy8o"/>
+</div>
+<div class="absolute -bottom-6 -right-6 bg-primary text-on-primary p-8 rounded-xl shadow-xl hidden md:block max-w-[200px]">
+<p class="text-3xl font-bold mb-1">10k+</p>
+<p class="text-xs font-label tracking-widest uppercase">Sq Ft Production</p>
+</div>
+</div>
+<div>
+<h2 class="text-display-lg text-4xl font-bold tracking-tight mb-8">Crafted In Our <br/> Local Facility</h2>
+<p class="text-lg text-secondary mb-8 leading-loose">
+                        We pride ourselves on maintaining a state-of-the-art facility that serves as the backbone of our community's manufacturing strength. By keeping all production local, we maintain a level of oversight that is simply impossible with remote alternatives.
+                    </p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface">Advanced Tooling</h4>
+<p class="text-secondary text-sm">Every tool is calibrated daily to ensure absolute dimensional accuracy.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface">Local Expertise</h4>
+<p class="text-secondary text-sm">Our team consists of specialized technicians who have mastered the art of industrial production.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface">Material Integrity</h4>
+<p class="text-secondary text-sm">We source premium raw materials that meet strict industrial grade certifications.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-primary text-on-primary py-16">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+<div>
+<p class="text-4xl font-bold mb-2">99.8%</p>
+<p class="text-xs uppercase tracking-widest opacity-80">Precision Accuracy</p>
+</div>
+<div>
+<p class="text-4xl font-bold mb-2">24/7</p>
+<p class="text-xs uppercase tracking-widest opacity-80">Facility Monitoring</p>
+</div>
+<div>
+<p class="text-4xl font-bold mb-2">0</p>
+<p class="text-xs uppercase tracking-widest opacity-80">Safety Incidents</p>
+</div>
+<div>
+<p class="text-4xl font-bold mb-2">15+</p>
+<p class="text-xs uppercase tracking-widest opacity-80">Years Expertise</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f7f9fb] dark:bg-slate-950 w-full border-t border-[#c3c6d5]/15 font-['Manrope'] text-sm tracking-wide">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto gap-6">
+<div class="text-lg font-black text-[#00327d] dark:text-blue-400">Advaith Industries</div>
+<div class="flex flex-wrap justify-center gap-8 text-[#515f74]">
+<a class="hover:text-[#00327d] hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="hover:text-[#00327d] hover:underline transition-all" href="#">Terms of Service</a>
+<a class="hover:text-[#00327d] hover:underline transition-all" href="#">Sustainability</a>
+<a class="hover:text-[#00327d] hover:underline transition-all" href="#">Careers</a>
+</div>
+<div class="text-[#515f74] text-center md:text-right">
+                © 2024 Advaith Industries. All rights reserved.
+            </div>
+</div>
+</footer>
+<script>
+    async function loadData() {
+        try {
+            const response = await fetch('/api/data');
+            const data = await response.json();
+            console.log('Backend Data:', data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    }
+    document.addEventListener('DOMContentLoaded', loadData);
+</script>
+</body></html>

@@ -1,0 +1,10 @@
+{
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/index.py" },
+    { "src": "^/$", "dest": "/frontend/advaith_industries_home/code.html" },
+    { "src": "/about", "dest": "/frontend/about_advaith_industries/code.html" },
+    { "src": "/products", "dest": "/frontend/advaith_product_catalog/code.html" },
+    { "src": "/contact", "dest": "/frontend/contact_advaith_industries/code.html" },
+    { "src": "/frontend/(.*)", "dest": "/frontend/$1" }
+  ]
+}

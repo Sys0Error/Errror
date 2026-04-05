@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#e0e3e5",
+                    "on-tertiary-fixed": "#380d00",
+                    "primary": "#00327d",
+                    "on-tertiary-container": "#ffaa8a",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#b9c7df",
+                    "on-tertiary-fixed-variant": "#802900",
+                    "surface-bright": "#f7f9fb",
+                    "on-secondary-container": "#57657a",
+                    "outline": "#737784",
+                    "secondary": "#515f74",
+                    "on-background": "#191c1e",
+                    "on-secondary-fixed": "#0d1c2e",
+                    "inverse-surface": "#2d3133",
+                    "surface-tint": "#2559bd",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#001946",
+                    "surface": "#f7f9fb",
+                    "surface-container-high": "#e6e8ea",
+                    "on-surface-variant": "#434653",
+                    "primary-container": "#0047ab",
+                    "surface-container": "#eceef0",
+                    "tertiary-container": "#8b2e01",
+                    "on-primary-fixed-variant": "#00419e",
+                    "outline-variant": "#c3c6d5",
+                    "surface-dim": "#d8dadc",
+                    "tertiary": "#651f00",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed-dim": "#b1c5ff",
+                    "secondary-fixed": "#d5e3fc",
+                    "secondary-container": "#d5e3fc",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb59a",
+                    "background": "#f7f9fb",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#b1c5ff",
+                    "on-primary-container": "#a5bdff",
+                    "error-container": "#ffdad6",
+                    "surface-variant": "#e0e3e5",
+                    "on-primary": "#ffffff",
+                    "on-surface": "#191c1e",
+                    "on-secondary-fixed-variant": "#3a485b",
+                    "primary-fixed": "#dae2ff",
+                    "tertiary-fixed": "#ffdbcf",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "error": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .transition-slow { transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1); }
+        .hover-zoom:hover img { transform: scale(1.1); }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 dark:bg-slate-900/80 backdrop-blur-xl bg-gradient-to-b from-[#f7f9fb] to-transparent shadow-[0px_20px_40px_rgba(0,50,125,0.06)]">
+<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto font-['Manrope'] antialiased">
+<div class="text-xl font-bold tracking-tight text-[#00327d] dark:text-blue-400">
+                Advaith Industries
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#515f74] dark:text-slate-400 font-medium hover:text-[#00327d] hover:scale-105 transition-transform duration-300 ease-out" href="#">Home</a>
+<a class="text-[#00327d] dark:text-blue-300 font-semibold border-b-2 border-[#00327d] pb-1 hover:scale-105 transition-transform duration-300 ease-out" href="#">Products</a>
+<a class="text-[#515f74] dark:text-slate-400 font-medium hover:text-[#00327d] hover:scale-105 transition-transform duration-300 ease-out" href="#">Our Facility</a>
+<a class="text-[#515f74] dark:text-slate-400 font-medium hover:text-[#00327d] hover:scale-105 transition-transform duration-300 ease-out" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-5 py-2.5 rounded-lg text-sm font-bold hover:scale-105 transition-transform duration-300 ease-out active:scale-95">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<header class="mb-20">
+<div class="flex flex-col md:flex-row items-end gap-6 justify-between border-l-4 border-primary pl-8">
+<div class="max-w-2xl">
+<p class="text-xs font-bold uppercase tracking-[0.2em] text-secondary mb-4">Precision Manufacturing</p>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-background tracking-tighter leading-none mb-6">
+                        Industrial <br/> Excellence.
+                    </h1>
+</div>
+<div class="max-w-xs text-right">
+<p class="text-secondary leading-relaxed font-medium">
+                        Crafting high-performance components with machined precision and uncompromising quality standards.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Product Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Featured Product 1: HV Bushing Clamps -->
+<div class="md:col-span-8 group overflow-hidden bg-surface-container-low rounded transition-all duration-500 hover:shadow-[0px_20px_40px_rgba(0,50,125,0.06)]">
+<div class="flex flex-col md:flex-row h-full">
+<div class="md:w-1/2 p-10 flex flex-col justify-between">
+<div>
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary mb-2 block">High Voltage Series</span>
+<h2 class="text-3xl font-bold text-on-background mb-4">Hv bushing clamps</h2>
+<p class="text-secondary text-sm leading-loose">Precision-machined high-voltage connectors designed for maximum conductivity and mechanical stability in demanding power environments.</p>
+</div>
+<button class="mt-8 flex items-center gap-2 text-sm font-bold text-primary group/btn">
+                            View Specifications 
+                            <span class="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_right_alt</span>
+</button>
+</div>
+<div class="md:w-1/2 overflow-hidden bg-surface-container-highest relative min-h-[300px]">
+<img alt="Industrial Metal Components" class="absolute inset-0 w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Macro photography of precision machined heavy duty metal clamps with a polished finish and industrial lighting shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGemdVGNtzthxwQvbo-F9paSgBDnp3dMVhfC_DEDztXYFr_BzJY3A6xRcjQWxYOtqlWsgIO4sQpbfti70EJ2rVrmTN1L6RA-BydTljMco6VxaKlPUOZwXz4KB5H8ama_VgedESo8BsiPKk_ihVDkJQ316dNEpD4WRwxO9-1B9NaiiShxVXWs6xQslaFAlTQIYXwStSZ6P8fzEQppfk32sYXrgTwLoHCG42fTvU8GW362k0JFvqMeOUApWA9AjjlcQm531CFrYazSR6"/>
+</div>
+</div>
+</div>
+<!-- Product 2: LV Epoxy Bushings -->
+<div class="md:col-span-4 group bg-surface-container-lowest rounded transition-all duration-500 hover:shadow-[0px_20px_40px_rgba(0,50,125,0.06)] flex flex-col">
+<div class="aspect-square bg-surface-container-highest overflow-hidden">
+<img alt="Electrical Bushings" class="w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Close up of high quality reddish-brown epoxy resin electrical bushings arranged in a clean industrial pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD50IgTOU-rvgX9tMc2Ye20yVVkcxc6UZsqftUCr6OjFn_7QzGc1ZirxACWcwXgFxGNUDt3US8zSh5nNqEaHD6pAF8t1Q01d4eB8iWALaTGCqB-TvQlAVrvdNZ-HsB7vPr_jDqaLH2jut3csVeXhkH6cHRwyQVLM1KaaZijJnwVN-rqPc6hWTTwZt6nmU5AzWNkgiWntNJaxSsJvqfxBM6axWN0MeGQXo14jBRWCASJBSg_YV6nskiKJdYbB8E8NkKMWNQ3mPml7yac"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-2 block">Insulation Systems</span>
+<h3 class="text-xl font-bold text-on-background mb-2">Lv Epoxy bushings</h3>
+<p class="text-secondary text-sm line-clamp-2">Standardized low voltage epoxy insulation solutions for switchgear and transformers.</p>
+</div>
+</div>
+<!-- Product 3: Brass Metal Parts -->
+<div class="md:col-span-4 group bg-surface-container-lowest rounded transition-all duration-500 hover:shadow-[0px_20px_40px_rgba(0,50,125,0.06)] flex flex-col">
+<div class="aspect-square bg-surface-container-highest overflow-hidden">
+<img alt="Brass Components" class="w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Artistic arrangement of small precision-turned brass metal components showing golden metallic texture and sharp threads" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUWLXkDyd0jWryIkLHjVBYCM4ECfYQc4Tb6q-lG2jZr3YCaqQ0mJXJKMMwPMr1Bq-EyV55QwVH_UAQAkZ0nq85JSJAjzY8KWmYsACf31f7ISnQvYK1fWKF9iJcPYttes-pSzBaqEwtSI5wAoA0Q_mP5o8mzyAhsrnVFduUB7_TPB804ml6kpnGpHHkAkPqoDY2KKLBVv4JxkY7a_Do-x08nxZwMFXwKBukyaUUlx-fw8h1Psr2rySSL8BC4vCKpNVydIqrtrHsdRF_"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-2 block">Custom Machining</span>
+<h3 class="text-xl font-bold text-on-background mb-2">Brass metal parts</h3>
+<p class="text-secondary text-sm line-clamp-2">Custom-tooled brass fittings and terminals with superior corrosion resistance and precision threads.</p>
+</div>
+</div>
+<!-- Product 4: Power Press Components -->
+<div class="md:col-span-4 group bg-surface-container-lowest rounded transition-all duration-500 hover:shadow-[0px_20px_40px_rgba(0,50,125,0.06)] flex flex-col">
+<div class="aspect-square bg-surface-container-highest overflow-hidden">
+<img alt="Stamping Parts" class="w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Industrial steel power press components showcasing complex stamped geometries and silver metallic surface finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxAvHMqSR7Z23Hiq0Smkht1jrn8PKgLvjGDeQhGB4zJJfhJ95GhHbuJ9GljIJYmjYfpFaqbpC-DLjIsuAP24KF5FQRv-VWp7axHV6Oo3TXad8jpvEKbBr9oIVfJJD4TR5H8yEzcIIRa3SAhy26Z3gGL3-CXl1-HSUE96CsiuixFKDJs_0VITbOUO3bJ10q_yYWrd-Nj8LdiOh2sEI07hLSaGNtZmRw8WwQnO9e4cWUDNLqyJIFcaIsx7B43La940nb5Mt70Mwi578C"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-2 block">Stamping Division</span>
+<h3 class="text-xl font-bold text-on-background mb-2">Power press components</h3>
+<p class="text-secondary text-sm line-clamp-2">Heavy-duty pressed steel parts manufactured with tight tolerances for structural integrity.</p>
+</div>
+</div>
+<!-- Product 5: Transformer Spare Parts -->
+<div class="md:col-span-4 group bg-surface-container-lowest rounded transition-all duration-500 hover:shadow-[0px_20px_40px_rgba(0,50,125,0.06)] flex flex-col">
+<div class="aspect-square bg-surface-container-highest overflow-hidden">
+<img alt="Transformer Parts" class="w-full h-full object-cover transition-slow group-hover:scale-110" data-alt="Collection of heavy industrial transformer hardware including bolts and specialized connectors on a clean work surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBraDTIl9EakhEWFoUcKM89S1tZ6KXoKuouVTmJPIuKIeTZXExzE4S3iIzeqlUMI_1Q2CV76zneiHlZotbpv7v6i_LJtWNHN5tDzIZmdSl6LrgiIgvC0GGZTssvsmR45icA9UCQvuR0rkLFijMAH_AfCeEAHNDuNj5V9Xu-sZkPht7rTLJYx-sgUILeRWbsoYwAtXLtxW4u1eNZ4sS40OWzzO0GFUIORHRctypwSU1V1y66Wg59OCYOZwI9m5t8GA0EQUx-0JUn4GDw"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold uppercase tracking-widest text-secondary mb-2 block">Ancillary Services</span>
+<h3 class="text-xl font-bold text-on-background mb-2">Transformer spare parts</h3>
+<p class="text-secondary text-sm line-clamp-2">Comprehensive inventory of critical spares including gaskets, valves, and specialized hardware.</p>
+</div>
+</div>
+</div>
+<!-- Capability Statement -->
+<section class="mt-32 pt-20 border-t border-outline-variant/15">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div>
+<h4 class="text-sm font-extrabold uppercase tracking-widest text-primary mb-6">Machined Quality</h4>
+<p class="text-secondary leading-relaxed">Our manufacturing floor is dedicated to the highest standards of physical output, ensuring every component meets rigorous tolerance benchmarks.</p>
+</div>
+<div>
+<h4 class="text-sm font-extrabold uppercase tracking-widest text-primary mb-6">Material Integrity</h4>
+<p class="text-secondary leading-relaxed">We source only premium grade raw materials, from high-conductivity brass to industrial-strength resins, for lasting reliability.</p>
+</div>
+<div>
+<h4 class="text-sm font-extrabold uppercase tracking-widest text-primary mb-6">Operational Focus</h4>
+<p class="text-secondary leading-relaxed">By concentrating on core industrial verticals, we deliver specialized expertise that generalist manufacturers simply cannot match.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#c3c6d5]/15 bg-[#f7f9fb] dark:bg-slate-950 font-['Manrope'] text-sm tracking-wide">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto gap-6">
+<div class="text-lg font-black text-[#00327d] dark:text-blue-400">
+                Advaith Industries
+            </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#515f74] hover:text-[#00327d] hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="text-[#515f74] hover:text-[#00327d] hover:underline transition-all" href="#">Terms of Service</a>
+<a class="text-[#515f74] hover:text-[#00327d] hover:underline transition-all" href="#">Sustainability</a>
+<a class="text-[#515f74] hover:text-[#00327d] hover:underline transition-all" href="#">Careers</a>
+</div>
+<div class="text-[#515f74]">
+                © 2024 Advaith Industries. All rights reserved.
+            </div>
+</div>
+</footer>
+<script>
+    async function loadData() {
+        try {
+            const response = await fetch('/api/data');
+            const data = await response.json();
+            console.log('Backend Data:', data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    }
+    document.addEventListener('DOMContentLoaded', loadData);
+</script>
+</body></html>
