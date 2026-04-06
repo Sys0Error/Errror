@@ -1,16 +1,8 @@
 {
-  "framework": null,
-  "buildCommand": "",
-  "outputDirectory": ".",
+  "version": 2,
   "builds": [
-    {
-      "src": "api/index.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "frontend/**",
-      "use": "@vercel/static"
-    }
+    { "src": "api/index.py", "use": "@vercel/python" },
+    { "src": "frontend/**", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/index.py" },
@@ -20,3 +12,4 @@
     { "src": "/contact", "dest": "/frontend/contact_advaith_industries/code.html" },
     { "src": "/frontend/(.*)", "dest": "/frontend/$1" }
   ]
+}
